@@ -1,0 +1,114 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  /* Container for the portfolio */
+  .portfolio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Header styles */
+  .header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .header p {
+    margin: 5px 0 0;
+    font-style: italic;
+    color: #f0f2f5;
+  }
+  
+  /* Section styles */
+  section {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  section h2 {
+    color: #6a11cb;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Project styles */
+  .projects .project {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    margin-top:30px;
+  }
+  
+  
+  .projects .project h3 {
+    margin: 0 0 5px;
+    color: #333;
+  }
+  
+  .projects .project p {
+    margin: 0;
+    color: #555;
+  }
+  .projects .project:hover {
+    transform: translateY(-10px); /* Move the card up */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skills li {
+    background: #6a11cb;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+  }
+  
+  .skills li:hover {
+    background-color: lightblue;
+  }
+  
+  
+  /* Contact styles */
+  .contact p {
+    margin: 5px 0;
+  }
+  
+  .contact a {
+    color: #2575fc;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  

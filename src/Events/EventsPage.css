@@ -1,0 +1,78 @@
+.upcoming-events {
+  text-align: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.upcoming-events h2 {
+  font-size: 2.5rem;
+  color: #0066cc; /* Deep blue color */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #0066cc; /* Matching underline */
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.event-card {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff6f61, #ff9e80);
+  color: white;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color:"white"; ; /* Bright golden-yellow color */
+}
+
+
+.event-card p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 600px) {
+  .events-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .event-card {
+    width: 48%;
+  }
+}
+
+@media (min-width: 900px) {
+  .event-card {
+    width: 30%;
+  }
+}
+

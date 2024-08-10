@@ -1,0 +1,180 @@
+.carousel-img-sz 
+  {
+    height:1000px;
+    width:1000px;
+  } 
+
+  .carousel .slide img {
+    width:850px;
+    height:450px;
+   height: auto; 
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+ }
+ 
+ .carousel .legend {
+   background: rgba(0, 0, 0, 0.5);
+   color: white;
+   padding: 10px;
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: fit-content;
+ } 
+ .achieve-img 
+ {
+   height:200px;
+   width:300px;
+ }
+
+ .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 24px;
+  overflow-y: auto; /* Allow vertical scrolling if necessary */
+}
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, max-height 0.2s;
+  text-align: center;
+  cursor: pointer;
+  max-height: 400px; /* initial max height */
+}
+
+.card.expanded {
+  max-height: 400px; /* adjust as needed for expanded content */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0 0 8px;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #555;
+  
+}
+
+.card.expanded .card-description {
+  display: block;
+}
+  
+  
+  .posters-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+    margin-top: 0;
+    height:380px;
+    padding-bottom: 40px;
+  }
+  
+  .poster {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 30px rgba(15, 12, 12, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 0;
+  }
+  
+  .poster-content {
+    
+    margin-top: 0;
+
+  }
+  
+  .poster-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 10px;
+
+  }
+  
+  .poster-date,
+  .poster-venue,
+  .poster-incharge,
+  .poster-contact {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .poster-date::before,
+  .poster-venue::before,
+  .poster-incharge::before,
+  .poster-contact::before {
+    content: '📅';
+    display: inline-block;
+    width: 1em;
+    margin-right: 8px;
+  }
+  
+  .poster-venue::before {
+    content: '📍';
+  }
+  
+  .poster-incharge::before {
+    content: '👤';
+  }
+  
+  .poster-contact::before {
+    content: '☎️';
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+      width: 100%;
+    bottom: 0;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+  

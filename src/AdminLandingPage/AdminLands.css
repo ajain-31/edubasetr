@@ -1,0 +1,176 @@
+.landingImage 
+{
+    margin-left: 250px; 
+    margin-top: 30px; 
+    border-top-left-radius: 30px;
+     border-top-right-radius: 30px;
+     border-bottom-left-radius: 30px;
+     border-bottom-right-radius: 30px;
+} 
+.landing-image-container
+{
+     height:200px;
+     width:200px;
+
+     
+} 
+.students-container 
+{
+    height:200px;
+    width:300px; 
+    background-color: pink;
+} 
+.img-size 
+{
+    height:300px;
+    width:400px;  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+} 
+.content 
+{
+    padding-left: 40px;
+    font-size: 28px;  
+    font-weight:bold;
+
+    
+} 
+.span 
+{
+    background-color: blue; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;  
+    height:50px;
+    width:200px; 
+    color:white;
+    font-size:24px; 
+    border:0px; 
+   margin-left: 100px; 
+   margin-top:30px;
+    
+}
+.stdents-container-2 
+{
+    height:200px;
+    width:300px; 
+    background-color: pink;
+  
+
+} 
+
+/* src/App.css */
+.app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .card-admins{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 400px;
+    height:"550px";
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card p {
+    margin: 0;
+  } 
+  .card-1 
+  {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 300px;
+
+  } 
+  .content-1 
+  {
+    padding-left: 80px;
+    font-size: 28px;  
+    font-weight:bold; 
+    color:green
+  } 
+  .main-container {
+    display: flex;
+   
+  }
+  
+  .grid-container {
+    display: flex;
+    margin-right: 25px;
+    margin-left: 10px;
+    flex: 1;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px; 
+   
+  }
+  
+  .grid-item {
+    flex: 1;
+  }
+  
+  .img-cont 
+  {
+    width:400px;
+  } 
+  .img 
+  {
+    width:300px;
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+      width: 100%;
+    bottom: 0;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+  

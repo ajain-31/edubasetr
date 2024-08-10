@@ -1,0 +1,98 @@
+.login-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-back-school-background_23-2149464866.jpg?w=996&t=st=1721967482~exp=1721968082~hmac=96d905362e6270f6aecdc6a986d8a241238881aaa16252aa2998e03b982ceb69");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+    opacity: 0.7;
+   
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input {
+    padding: 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+    margin-bottom: 20px; 
+    margin-top:10px; 
+    margin-left: 30px; 
+    background-color: lightgrey;
+  }
+  
+  .image-container {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; 
+    margin-left:600px;
+  }
+  
+  .img {
+    height: 180px;
+    width: 180px;
+    border-radius: 20px;
+  }
+  
+  .circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #E76F51;
+    box-sizing: border-box;
+  }
+  
+  .labelElement {
+    font-size: 20px;
+    font-family: "roboto";
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  
+  }
+  
+  .elements-container {
+    
+    align-items: center;
+    background-color:transparent;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    height:330px;
+    width:400px; 
+    margin-left: 500px; 
+
+  }
+  
+  .login {
+    height: 50px;
+    width: 250px;
+    border-radius: 20px;
+    margin: 10px 0;
+    background-color: lightcoral;
+    border: none;
+    font-size: 16px;
+    cursor: pointer; 
+    margin-left: 70px;  
+    
+    
+  }
+  
+  .login:hover {
+    background-color: #d65f41;
+  }
+.labels 
+{
+    color:#FF007F;
+    font-size:20px;
+    padding-top: 20px; 
+    font-weight:bold;  
+    font-family: "roboto"; 
+    padding-left: 50px;
+    
+}
+   

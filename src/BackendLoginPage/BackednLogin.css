@@ -1,0 +1,93 @@
+.signup-container 
+{
+    
+    height: 500px;
+    width:1000px; 
+    background-color:rgb(183, 247, 247);
+    margin-left: 200px; 
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;  
+    margin-top:100px;
+
+}  
+.image-card 
+{
+    height: 500px;
+    width:600px;
+   float: left; 
+   border-top-left-radius: 30px; 
+   border-bottom-left-radius: 30px;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    
+    width: 100%;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 10px; /* Adjust based on padding of input */
+    color: #aaa;
+  }
+  
+  .input-container input {
+    padding-left: 30px; /* Adjust based on the width of the icon */
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+   
+  } 
+  .element 
+  {
+    color:white;
+    padding-left: 70px; 
+    color:white; 
+    font-size: 20px; 
+    padding-left: 20px;
+  }  
+  .input 
+  {
+   margin-left: 40px;
+    padding: 2px; 
+    border: 1px;
+    border-color:#eaeaf1;
+    background-color:white;
+
+    
+  }
+  .signup 
+  {
+    color:white;
+    font-size: 35px;
+    align-items: center; 
+    display: flex; 
+    padding-left: 130px; 
+    margin-top: 20px; 
+    font-weight: bold;
+
+  } 
+.btn 
+{   margin-left: 60px;
+    background-color:white;  
+    color:rgb(183, 247, 247);;
+    padding: 15px; 
+    border: 0px;  
+    width:300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
+    margin-top: 20px; 
+    font-weight: bold;
+    font-size:30px; 
+    margin-right: 40px;
+}
+
+  

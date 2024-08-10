@@ -1,0 +1,112 @@
+
+/* General card styles */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.card-landing{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 380px;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Main container for schemes */
+.main-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  gap: 20px; /* Space between the items */
+  justify-content: space-between; /* Space between items */
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row; /* Ensure items are side by side */
+  width: calc(50% - 10px); /* Adjust width for two items side by side */
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Add space between rows */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-container:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item {
+  flex: 1;
+}
+
+.img-cont {
+  width: 150px; /* Set a fixed width for the image container */
+}
+
+.img {
+  width: 100%; /* Ensure the image fits within the container */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+   color: white;
+   margin: 0 10px;
+   text-decoration:none;
+   font-size: 24px;
+   transition: color 0.3s ease; 
+
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.schemes-heading {
+  font-family: 'Lora', serif;
+  color: #f8015c;
+}
+
+.schemes-desciption {
+  word-spacing: 6px;
+  font-size: 15px;
+}
+
+.text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-size 
+{
+  width:250px;
+}
