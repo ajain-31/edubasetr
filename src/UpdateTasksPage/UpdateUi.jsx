@@ -1,48 +1,70 @@
-import React from 'react';
+
+import React, { useState, useEffect } from 'react';
 import NavStaff from '../NavStaffFolder/NavStaff';
 import { useNavigate } from 'react-router-dom';
-import './UpdateUi.css'; // Import your CSS file if needed
+import './UpdateUi.css';
 
-// Define the Card component
-const Card = ({ title, description, buttonLabel, onButtonClick }) => (
+const Card = ({ title, description, tasks, onButtonClick }) => (
   <div className="card">
-    <h3 style={{marginTop:"20px"}}>{title}</h3>
-    <p style={{marginTop:"20px",marginBottom:"20px",color:"coral",fontSize:"20px"}}>{description}</p>
-    <button onClick={onButtonClick} style={{fontSize:"23px"}}>{buttonLabel}</button>
+    <h3>{title}</h3>
+    <p className="section-description">{description}</p>
+    <div className="tasks-container">
+    {tasks.length > 0 ? (
+        tasks.map((task, index) => (
+          <div key={index} className="task">
+            <p className="task-title">{task.title}</p>
+            <p className="task-desc">{task.description}</p>
+          </div>
+        ))
+      ) : (
+        <p className="no-tasks">No tasks available</p>
+      )}
+       
+      
+    </div>
+    <button onClick={onButtonClick} className="update-button">{`Update ${description}`}</button>
   </div>
 );
 
-// Main component
 const UpdateUi = () => {
-  const navigate = useNavigate(); // Hook to navigate between routes
+  const navigate = useNavigate();
+  const [tasks, setTasks] = useState({
+    'CLASS 10-SECTION A': [],
+    'CLASS 8-SECTION B': [],
+    'CLASS 8-SECTION C': []
+  });
 
-  // Handle button clicks and navigate to /UpdateTasks with parameters
+  useEffect(() => {
+    // Replace with your logic to fetch tasks from the server and update the state
+    // Example: fetchTasksForClassAndSection('CLASS 10', 'SECTION A');
+  }, []);
+
   const handleButtonClick = (className, sectionName) => {
-    navigate(`/UpdateTasks/${className}/${sectionName}`); // Navigate to UpdateTasks page with parameters
+    navigate(`/UpdateTasks/${className}/${sectionName}`);
   };
 
   return (
     <div>
       <NavStaff />
-      <h1 style={{ textAlign: 'center' ,color:"blue"}}>Update Tasks</h1>
+      <h1 className="header">Update Tasks</h1>
       <div className="card-container">
         <Card
           title="CLASS 10"
           description="SECTION A"
-          buttonLabel="Update"
-          onButtonClick={() => handleButtonClick('CLASS 10', 'SECTION A')} // Pass parameters
+          tasks={tasks['CLASS 10-SECTION A']}
+          onButtonClick={() => handleButtonClick('CLASS 10', 'SECTION A')}
         />
         <Card
           title="CLASS 8"
           description="SECTION B"
-          buttonLabel="Update"
-          onButtonClick={() => handleButtonClick('CLASS 8', 'SECTION B')} // Pass parameters
+          tasks={tasks['CLASS 8-SECTION B']}
+          onButtonClick={() => handleButtonClick('CLASS 8', 'SECTION B')}
         />
         <Card
           title="CLASS 8"
           description="SECTION C"
-          buttonLabel="Update"
-          onButtonClick={() => handleButtonClick('CLASS 8', 'SECTION C')} // Pass parameters
+          tasks={tasks['CLASS 8-SECTION C']}
+          onButtonClick={() => handleButtonClick('CLASS 8', 'SECTION C')}
         />
       </div>
     </div>
@@ -50,4 +72,3 @@ const UpdateUi = () => {
 };
 
 export default UpdateUi;
-

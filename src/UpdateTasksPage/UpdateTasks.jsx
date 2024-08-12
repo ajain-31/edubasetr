@@ -1,12 +1,12 @@
-
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './UpdateTasks.css'; // Import your CSS file if needed
+import axios from 'axios';
 import NavStaff from '../NavStaffFolder/NavStaff';
+import './UpdateTasks.css';
 
 const UpdateTasks = () => {
   const { className, sectionName } = useParams();
-  const [task, setTask] = useState({ title: '', description: '' });
+  const [task, setTask] = useState({ title: '', description: '', subject: 'Tamil', section: sectionName });
   const [submissionMessage, setSubmissionMessage] = useState('');
 
   const handleInputChange = (e) => {
@@ -14,10 +14,20 @@ const UpdateTasks = () => {
     setTask({ ...task, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Implement the logic to handle task submission, e.g., send the task to a server
-    alert('Tasks Submitted Successfully');
+    try {
+      const response = await axios.post('http://localhost:9001/tasks/add', task);
+      if (response.status === 200) {
+        setSubmissionMessage('Task Submitted Successfully');
+        setTask({ title: '', description: '', subject: task.subject, section: sectionName });
+      } else {
+        setSubmissionMessage('Failed to submit task');
+      }
+    } catch (error) {
+      console.error('Error submitting task:', error);
+      setSubmissionMessage('Failed to submit task');
+    }
   };
 
   return (
@@ -27,6 +37,21 @@ const UpdateTasks = () => {
         <h1 className="title">Update Tasks for {className} - {sectionName}</h1>
         <form className="task-form" onSubmit={handleSubmit}>
           <div className="form-group">
+            <label htmlFor="subject">Subject</label>
+            <select
+              id="subject"
+              name="subject"
+              value={task.subject}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="Tamil">Tamil</option>
+              <option value="English">English</option>
+              <option value="Maths">Maths</option>
+              <option value="Science">Science</option>
+              <option value="Social Science">Social Science</option>
+            </select>
+
             <label htmlFor="title">Task Title:</label>
             <input
               type="text"

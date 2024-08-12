@@ -18,11 +18,18 @@ const StudentLogin = () => {
                 email,
                 password
             });
-
+    
             if (response.status === 200) {
-                // Handle successful login
-                alert('Login successful');
-                navigate('/LandingPage');
+                // Handle successful login based on user role
+                if (email.endsWith('.stu@gmail.com')) {
+                    navigate('/LandingPage');
+                } else if (email.endsWith('.stf@gmail.com')) {
+                    navigate('/StaffLanding');
+                } else if (email.endsWith('.admin@gmail.com')) {
+                    navigate('/AdminLands');
+                } else {
+                    setMessage('Invalid email or password');
+                }
             } else {
                 setMessage('Invalid email or password');
             }
@@ -41,6 +48,7 @@ const StudentLogin = () => {
             setMessage(errorMessage);
         }
     };
+    
 
     return (
         <div style={{ height: '100vh' }}>

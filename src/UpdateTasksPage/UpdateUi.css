@@ -1,72 +1,74 @@
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-}
-
-.title {
-  text-align: center;
-  color: #333;
-  margin-top: 20px;
-  font-size: 2.5rem;
-}
-
 .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  margin-top: 20px;
 }
 
 .card {
-  background: #fff;
+  background-color: #f0f8ff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  max-width: 300px;
   text-align: center;
+  transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
-.card h3 {
-  margin-top: 0;
-  color: #333;
+.section-description {
+  font-size: 18px;
+  color: #ff7f50;
+  margin-bottom: 15px;
 }
 
-.card p {
-  color: #777;
+.tasks-container {
+  margin-bottom: 20px;
 }
 
-.card button {
-  background-color: #4CAF50;
-  border: none;
+.task {
+  background-color: #e6f7ff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.task-title {
+  font-weight: bold;
+}
+
+.task-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+.no-tasks {
+  color: #888;
+  font-style: italic;
+}
+
+.update-button {
+  background-color: #007bff;
   color: white;
   padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 10px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 16px;
 }
 
-.card button:hover {
-  background-color: #45a049;
+.update-button:hover {
+  background-color: #0056b3;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.header {
+  text-align: center;
+  color: #1e90ff;
+  margin-top: 20px;
 }

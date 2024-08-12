@@ -34,6 +34,7 @@ import SignUp from "../BackendLoginPage/BackendLogin";
 import BackendLogin from "../BackendLoginPage/BackendLogin";
 import UpdateTasks2 from "../UpdateTasksPage/UpdateTasks";
 import UpdateTasks from "../UpdateTasksPage/UpdateTasks";
+import ViewTasks from "../AcademicsPage/ViewTasks";
 //import PreLogin from "../PreLoginPage/PreLogin";
 
 
@@ -46,12 +47,14 @@ const RoutingDom=()=>
                 <Route path='/' element={<LandingPage/>}/>
                 <Route path='/LandingPage' element={<LandingPage/>}/>
                 <Route path='/signup' element={<SignUp/>}/>
-                <Route path='/Login' element={<PreLogin/>}/>
+                <Route path='/Login' element={<StudentLogin/>}/>
                 <Route path='/adminlogin' element={<AdminLogin/>}/>
                 <Route path='/AdminLands' element={<AdminLands/>}/>
                 <Route path='/stafflogin' element={<StaffLogin/>}/>
                  <Route path='/SignUp' element={<SignUp/>}/>
-
+                   <Route path="/AdminLands" element={<AdminLands/>}/>
+                   <Route path="/StaffLanding" element={<StaffLanding/>}/>
+                   <Route path="/LandingPage" element={<LandingPage/>}/>
                 
                  <Route path='/language' element={<Language/>}/>
                  <Route path='/chat/:language' element={<Chat/>}/>
@@ -60,6 +63,7 @@ const RoutingDom=()=>
                 <Route path='/StaffLanding' element={<StaffLanding/>}/>
                 <Route path='/updatetasks' element={<UpdateUi/>}/>
                 <Route path='/UpdateTasks/:className/:sectionName' element={<UpdateTasks/>}/>
+                <Route path="/view-tasks/:subject/:section" element={<ViewTasks />} />
                 <Route path='/attendance' element={<Attendance/>}/>
 
                 <Route path='/staffsearchingstudent' element={<StaffSearchingStudent/>}/>
@@ -74,6 +78,9 @@ const RoutingDom=()=>
                 <Route path='/AdminLandingPage' element={<AdminLands/>}/>
                 <Route path='/Signup' element={<LandingPage/>}/>
                 <Route path='/Academics' element={<Academics/>}/> 
+
+
+
                 <Route path='/Sports' element={<Sports/>}/> 
                 <Route path='/AboutUs' element={<AboutUs/>}/> 
                 <Route path='/Result' element={<Result/>}/>
