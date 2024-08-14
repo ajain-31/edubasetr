@@ -1,6 +1,6 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import './StudentLogin.css';
 
 const StudentLogin = () => {
@@ -22,10 +22,13 @@ const StudentLogin = () => {
             if (response.status === 200) {
                 // Handle successful login based on user role
                 if (email.endsWith('.stu@gmail.com')) {
+                    alert("Login Successfully")
                     navigate('/LandingPage');
                 } else if (email.endsWith('.stf@gmail.com')) {
+                    alert("Login Successfully")
                     navigate('/StaffLanding');
                 } else if (email.endsWith('.admin@gmail.com')) {
+                    alert("Login Successfully")
                     navigate('/AdminLands');
                 } else {
                     setMessage('Invalid email or password');
@@ -51,8 +54,8 @@ const StudentLogin = () => {
     
 
     return (
-        <div style={{ height: '100vh' }}>
-            <div className="login-container">
+        <div style={{ height: '100vh' ,backgroundColor:"blue"}}>
+            <div className="login-container" style={{backgroundColor:"blue"}}>
                 <div className="image-container">
                     <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI0oli_MOGTUiQlEDv71OIdmBj_K2h-QN65A&usqp=CAU"

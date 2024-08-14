@@ -16,13 +16,14 @@ const Card = ({ title, description, tasks, onButtonClick }) => (
             <p className="task-desc">{task.description}</p>
           </div>
         ))
-      ) : (
-        <p className="no-tasks">No tasks available</p>
-      )}
+    ):(
+      <p></p>
+    ) 
+      }
        
       
     </div>
-    <button onClick={onButtonClick} className="update-button">{`Update ${description}`}</button>
+    <button onClick={onButtonClick} className="update-button">{`Update Tasks`}</button>
   </div>
 );
 
@@ -46,7 +47,7 @@ const UpdateUi = () => {
   return (
     <div>
       <NavStaff />
-      <h1 className="header">Update Tasks</h1>
+      <h1 className="header" style={{color:"white"}}>Update Tasks</h1>
       <div className="card-container">
         <Card
           title="CLASS 10"

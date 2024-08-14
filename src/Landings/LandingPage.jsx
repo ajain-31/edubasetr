@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Navbar from '../NavbarFolder/Navbar';
 
 
-import './LandingPage.css';  
 import Footer from '../FooterPage/Footer';
+import './LandingPage.css';
 
 
 
@@ -14,7 +14,7 @@ const LandingPage = () => {
 
        
        <div>
-        
+        <h1 style={{ textAlign: 'center', color: '#e75450', fontFamily: 'Georgia',marginTop:'30px' }}>Hi Students!!!</h1>
        <h1 style={{ textAlign: 'center', color: '#e75450', fontFamily: 'Georgia',marginTop:'30px' }}>A Warm Welcome By EduBasedTN</h1>
 
        <img src="https://thecsrjournal.in/wp-content/uploads/2024/03/Government-school.jpg" alt="Loading" className='landingImage'/> 
@@ -25,27 +25,27 @@ const LandingPage = () => {
         <img src="https://www.pngkey.com/png/detail/400-4003680_registration-for-under-graduate-student-icon-png.png" alt="Loading" style={{width:"330px"}}className='img-size'/> 
         <p className='content'>Students</p>
         <span style={{paddingLeft:"20px",fontWeight:"bold"}}>COUNT</span>
-        <button className='span' style={{marginLeft:'30px',marginTop:'20px',marginBottom:'20px',backgroundColor:"#FE2C54"}}>527503</button>  
+        {/* <button className='span' style={{marginLeft:'30px',marginTop:'20px',marginBottom:'20px',backgroundColor:"#FE2C54"}}>527503</button>   */}
           
         </div>
         <div className="card-landing">
         <img src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg" alt="Loading" style={{width:"330px"}} className='img-size'/> 
         <p className='content'>Teachers</p>
         <span style={{paddingLeft:"20px",fontWeight:"bold"}}>COUNT</span>
-        <button className='span' style={{marginLeft:'30px',marginTop:'20px',marginBottom:'20px',backgroundColor:"#FE2C54"}}>225400</button>  
+        {/* <button className='span' style={{marginLeft:'30px',marginTop:'20px',marginBottom:'20px',backgroundColor:"#FE2C54"}}>225400</button>   */}
         </div>
 
         <div className="card-landing">
         <img src="https://www.eurokidsindia.com/blog/wp-content/uploads/2023/10/role-of-school.jpg" alt="Loading" style={{width:"330px"}} className='img-size'/> 
         <p className='content'>Schools</p>
         <span style={{paddingLeft:"20px" ,fontWeight:"bold"}}>COUNT</span>
-        <button className='span' style={{marginLeft:'30px',marginTop:'20px',marginBottom:'20px',backgroundColor:"#FE2C54"}}>37544</button>  
+        {/* <button className='span' style={{marginLeft:'30px',marginTop:'20px',marginBottom:'20px',backgroundColor:"#FE2C54"}}>37544</button>   */}
         </div>
 
         </div>
     </div>
-      <h1 style={{textAlign:'center', fontFamily:"roboto",color:'lightcoral'}}>SCHEMES</h1>
-    <div className="main-container">
+      <h1 style={{textAlign:'center', fontFamily:"roboto",color:'lightcoral',marginTop:'19  0px'}}>SCHEMES</h1>
+    <div className="main-container">   
       <div className="grid-container">
         <div className="grid-item img-cont">
           <img src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/10/11/Pictures/a-file-photo-of-mid-day-meal_de971f58-ec49-11e9-a1fd-918c38724d55.jpg" alt="description1" className='img'/>
@@ -98,39 +98,18 @@ const LandingPage = () => {
       </div>
       
       
-
+   
     </div>
       
-    <div className="main-container" style={{marginTop:'20px',marnBottom:'30px'}}>
-      <div className="grid-container" style={{padding:'30px'}}>
-        <div className="grid-item img-cont">
-          <img src="https://www.coinguonphuquoc.com/wp-content/uploads/2020/11/education-Scholarship.jpg" alt="description1" className='img'/>
-        </div>
-        <div className="grid-item content-container">
-          <h2 className='schemes-heading'>7.5 RESERVATION</h2>
-          <p className='schemes-desciption'>
-          In 2021, the Tamil Nadu government adopted a bill in the State assembly to allocate 7.5% of seats on a 'preferential basis' for students in State-run schools to get admissions in engineering, agriculture, veterinary, fisheries, law, and other professional courses offered in universities, private colleges, government.
-          </p>
-        </div>
-      </div>
+    
       
      
 
-      <div className="grid-container" style={{padding:'30px'}}>
-        <div className="grid-item img-cont">
-          <img src="https://naanmudhalvan.tnschools.gov.in/assets/img/about%20image.jpg" alt="description2" className='img'/>
-        </div>
-        <div className="grid-item content-container">
-          <h2 className='schemes-heading'>NAAN MUDHALVAN</h2>
-          <p className='schemes-desciption'>
-          The Naan Mudhalvan scheme, introduced by the Hon`ble Chief Minister in March 2022, stands as a dedicated initiative to provide comprehensive and effective guidance for Higher Education and Career Development to students in government schools. It is driven by the belief that the Gross Enrolment Ratio (GER) in Tamil Nadu.
-          </p>
-        </div>
-      </div>
+     
       
       
 
-    </div>
+    
     
     
       

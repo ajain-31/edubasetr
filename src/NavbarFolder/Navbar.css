@@ -1,6 +1,7 @@
 /* General styles for the landing page */
 .landing-page {
   font-family: Arial, sans-serif;
+  background-color: aqua;
 }
 
 .navbar {

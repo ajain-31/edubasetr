@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="landing-page" >
-      <nav className="navbar" style={{backgroundColor:"#FE2C54"}}> 
+      <nav className="navbar" style={{backgroundColor:"blue"}}> 
         <div className="navbar-left">
           <div className="hamburger-icon" onClick={toggleMenu}>&#9776;</div>
           <img src="./afrah (1).png" alt='logo'/>
@@ -40,7 +40,7 @@ const Navbar = () => {
           <Link to="/"  style={{fontSize:'18px',fontFamily:'sans-serif',fontWeight:'bold',color:'white',textDecoration:"none",marginRight:"20px"}}>Home</Link>
           <Link to="/aboutus" style={{fontSize:'18px',fontFamily:'sans-serif',fontWeight:'bold',color:'white',textDecoration:"none",marginRight:"20px"}}>About Us</Link>
           <Link to="/login" style={{fontSize:'18px',fontFamily:'sans-serif',fontWeight:'bold',color:'white',textDecoration:"none",marginRight:"20px"}} >Login</Link>
-          
+          <Link to="/signup" style={{fontSize:'18px',fontFamily:'sans-serif',fontWeight:'bold',color:'white',textDecoration:"none",marginRight:"20px"}} >Sign up</Link>
 
         </div>
       </nav>

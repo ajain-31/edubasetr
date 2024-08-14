@@ -13,14 +13,14 @@ const PortfolioStaffSearch = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const data = [
-    { id: '1', name: 'John Doe', position: 'Math Teacher', subject: 'Mathematics' },
-    { id: '2', name: 'Jane Smith', position: 'Science Teacher', subject: 'Physics' },
-    { id: '3', name: 'Emily Davis', position: 'History Teacher', subject: 'History' },
-    { id: '4', name: 'Michael Brown', position: 'English Teacher', subject: 'English' },
-    { id: '5', name: 'Linda Johnson', position: 'PE Teacher', subject: 'Physical Education' },
-    { id: '6', name: 'Joy', position: 'PE Teacher', subject: 'Physical Education' },
-    { id: '7', name: 'Leelavathy', position: 'PE Teacher', subject: 'Physical Education' },
-    { id: '8', name: 'Peter', position: 'PE Teacher', subject: 'Physical Education' },
+    { id: '1', name: 'Lakshmi', position: 'Math Teacher', subject: 'Mathematics' },
+    { id: '2', name: 'Hema', position: 'Science Teacher', subject: 'Physics' },
+    { id: '3', name: 'Avinash', position: 'History Teacher', subject: 'History' },
+    { id: '4', name: 'Deepak', position: 'English Teacher', subject: 'English' },
+    { id: '5', name: 'Sachin', position: 'PE Teacher', subject: 'Physical Education' },
+    { id: '6', name: 'Kishore', position: 'Music Teacher', subject: 'Physical Education' },
+    { id: '7', name: 'Leelavathy', position: 'Physics Teacher', subject: 'Physical Education' },
+    { id: '8', name: 'Peter', position: 'Chemistry Teacher', subject: 'Physical Education' },
     { id: '9', name: 'Roshan', position: 'PE Teacher', subject: 'Physical Education' },
     { id: '10', name: 'Jasmine', position: 'PE Teacher', subject: 'Physical Education' },
     { id: '11', name: 'Arunthathi', position: 'PE Teacher', subject: 'Physical Education' },

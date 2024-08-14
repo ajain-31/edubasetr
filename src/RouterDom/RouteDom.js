@@ -1,40 +1,35 @@
-import { BrowserRouter, Route,Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 
-import LandingPage from "../Landings/LandingPage";
-import Academics from "../AcademicsPage/Academics";
-import Sports from "../SportsPage/Sports";
 import AboutUs from "../AboutUsPage/AboutUs";
+import Academics from "../AcademicsPage/Academics";
+import LandingPage from "../Landings/LandingPage";
 import Result from "../ResultsPage/Result";
-import PreLogin from "../PreLoginPage/PreLogin";
+import Sports from "../SportsPage/Sports";
 //import Login from "../LoginCorrect/Login";
-import StudentLogin from "../StudentLoginPage/StudentLogin";
 import StaffLogin from "../StaffLoginPage/StaffLogin";
+import StudentLogin from "../StudentLoginPage/StudentLogin";
 //import AdminLogin from "../AdminLoginPage/AdminLogin";
-import EventsPage from "../Events/EventsPage";
 import AdminLands from "../AdminLandingPage/AdminLands";
-import UpdateEvents from "../UpdateEventsPage/UpdateEvents";
-import TeacherPortfolio from "../TeacherPortfolioPage/TeacherPortfolio";
-import PortfolioSearching from "../PortfolioSearch/PortfolioSearching";
-import Login from "../LoginCorrect/Login";
 import AdminLogin from "../AdminLoginPage/AdminLogin";
-import StudentPortfolio from "../StudentPortfolioPage/StudentPortfolio";
+import EventsPage from "../Events/EventsPage";
 import PortfolioStaffSearch from "../PortfolioForStaffPage/PortfolioStaffSeach";
+import PortfolioSearching from "../PortfolioSearch/PortfolioSearching";
 import StaffLanding from "../StaffLandingPage/StaffLanding";
+import StudentPortfolio from "../StudentPortfolioPage/StudentPortfolio";
+import TeacherPortfolio from "../TeacherPortfolioPage/TeacherPortfolio";
+import UpdateEvents from "../UpdateEventsPage/UpdateEvents";
 
+import ViewTasks from "../AcademicsPage/ViewTasks";
 import Attendance from "../AttendancePage/Attendance";
+import SignUp from "../BackendLoginPage/BackendLogin";
+import Chat from "../LanguagePage/EnglishChat";
+import Language from "../LanguagePage/Language";
 import StaffSearchingStudent from "../StaffStudentPortfolio/StaffSearchingStudent";
 import StaffStudentPortfolio from "../StaffStudentPortfolio/StaffStudentPortfolio";
-import Language from "../LanguagePage/Language";
-import UpdateUi from "../UpdateTasksPage/UpdateUi";
-import Chat from "../LanguagePage/EnglishChat";
-import RegistrationPage from "../BackendLoginPage/BackendLogin";
-import SignUp from "../BackendLoginPage/BackendLogin";
-import BackendLogin from "../BackendLoginPage/BackendLogin";
-import UpdateTasks2 from "../UpdateTasksPage/UpdateTasks";
 import UpdateTasks from "../UpdateTasksPage/UpdateTasks";
-import ViewTasks from "../AcademicsPage/ViewTasks";
+import UpdateUi from "../UpdateTasksPage/UpdateUi";
 //import PreLogin from "../PreLoginPage/PreLogin";
 
 

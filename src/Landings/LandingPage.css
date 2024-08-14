@@ -16,6 +16,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 380px;
   background-color: #fff;
+  
 }
 
 .card:hover {
@@ -29,7 +30,7 @@
   flex-wrap: wrap; /* Allow wrapping of items */
   gap: 20px; /* Space between the items */
   justify-content: space-between; /* Space between items */
-  margin-top: 20px;
+  margin-top: 150px;
   margin-bottom: 30px;
 }
 

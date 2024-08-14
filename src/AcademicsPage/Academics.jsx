@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '../NavbarFolder/Navbar';
 import './Academics.css';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+
 
 const Academics = () => {
    
@@ -18,8 +18,8 @@ const Academics = () => {
                     <div className="button-container">
                        
                         <Link to="/view-tasks/Tamil/Section A">
-              <button className="span-btn">View Daily Tasks</button>
-            </Link>
+                        <button className="span-btn">View Daily Tasks</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -28,8 +28,8 @@ const Academics = () => {
                     <div className="button-container">
                        
                         <Link to="/view-tasks/English/Section A">
-              <button className="span-btn">View Daily Tasks</button>
-            </Link>
+                         <button className="span-btn">View Daily Tasks</button>
+                      </Link>
                     </div>
                 </div>
 
